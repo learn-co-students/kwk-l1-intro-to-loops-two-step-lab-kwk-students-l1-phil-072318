@@ -62,15 +62,16 @@ def break_dance
   # loop if steps is equal to 6
   
   steps = 0 #dont need loop do 
+  
   until steps == 6 #steps must stop when equal to 6 
     steps += 1
     if steps%2 == 0 
       puts "Left"
-    else
+    else #when not divisible by 2 
       puts "Right"
     sleep(0.5)
+   end
   end
-end
 end
 
 break_dance
